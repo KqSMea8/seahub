@@ -25,12 +25,12 @@ function upload_files() {
 }
 
 function make_dist() {
-    echo "Making dist files ..."
+    echo "`date` Making dist files ..."
     make dist
 }
 
 function build_frontend() {
-    echo "Building frontend/src files ..."
+    echo "`date` Building frontend/src files ..."
     cd ./frontend && npm install && CI=false npm run build && cd ..
 
 }
